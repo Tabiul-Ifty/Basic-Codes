@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+    int a[100],i,j,sum=0,n;
+    printf("Enter array size : ");
+    scanf("%d",&n);
+    printf(" Enter aray elements between %d  :\n",n);
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+
+    for(i=0;i<n;i++)
+    {
+        printf("%d",*(a+i));
+    }
+
+    for(i=0;i<n;i++)
+    {
+        sum =sum+*(a+i);
+    }
+    printf("\ntotal   %d",sum);
+    return 0;
+}
